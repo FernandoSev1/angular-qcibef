@@ -3,17 +3,11 @@
     <h1>Registrar</h1>
     <input
       type="text"
-      name="Email"
+      name="email"
       [(ngModel)]="email"
-      placeholder="Email"
+      placeholder="Correo"
       required="required"
     />
-    <input
-    type="text"
-    name="Nombre"
-    placeholder="Nombre"
-    required="required"
-  />
     <input
       type="password"
       name="password"
@@ -25,9 +19,9 @@
       type="password"
       [(ngModel)]="confirmPassword"
       name="password"
-      placeholder="Confirmar contraseña"
+      placeholder="Confirmar Contraseña"
       required="required"
     />
-    <button onclick="location.href='http://localhost:4200/login'" type="submit" (click)="register()">Ingresar</button>
+    <button type="submit" (click)="register()">Ingresar</button>
   </form>
 </div>
